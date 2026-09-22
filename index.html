@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#faf9f5">
+<title>단어숲 · 매일 조금씩 자라는 영어</title>
+<style>
+:root{--bg:#faf9f5;--ink:#253e36;--muted:#7b8880;--green:#327657;--light:#eaf1df;--line:#e5e7de;--orange:#e9a44d}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,'Malgun Gothic',sans-serif;font-size:15px}button,input,select,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}button{border:0;background:none}button:disabled{opacity:.45;cursor:default}header{height:88px;max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-bottom:1px solid var(--line)}.brand{font-size:24px;font-weight:900;letter-spacing:-1px;display:flex;align-items:center;gap:10px}.logo{background:var(--green);color:white;border-radius:12px;padding:8px;font-size:23px}.header-note{font-size:13px;color:var(--muted)}.shell{max-width:1060px;margin:40px auto;padding:0 24px 110px}.intro{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.eyebrow{font-size:11px;font-weight:bold;letter-spacing:2px;color:var(--green);margin-bottom:10px}h1{font-size:30px;letter-spacing:-1.4px;margin:0 0 10px}p{line-height:1.7;margin:6px 0;color:var(--muted)}.date{border:1px solid var(--line);border-radius:30px;padding:10px 15px;font-size:12px;background:white}.layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:26px}.panel{background:white;border:1px solid var(--line);border-radius:22px;padding:24px}.tabs{display:flex;gap:5px;background:#eeeee7;padding:5px;border-radius:14px;margin-bottom:24px}.tabs button{flex:1;border-radius:10px;padding:12px 4px;font-weight:bold;font-size:14px}.tabs .active{background:white;box-shadow:0 2px 5px #253e3610;color:var(--green)}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.tag{font-size:12px;background:var(--light);color:var(--green);padding:6px 11px;border-radius:8px}.subtle{color:var(--muted);font-size:12px}.progress{height:6px;background:#eef0e8;border-radius:10px;overflow:hidden;margin:16px 0 24px}.progress i{display:block;height:100%;background:var(--green);border-radius:10px;transition:width .3s}.flashcard{width:100%;min-height:310px;background:#f0f4e8;border:1px solid #e0e8d2;border-radius:18px;display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;padding:24px;transition:background .2s}.flashcard:hover{background:#eaf0df}.card-number{position:absolute;top:20px;left:20px;font-size:10px;letter-spacing:2px;color:#8b9b78}.word{font-size:48px;font-weight:800;letter-spacing:-1px;margin:20px 0 10px;overflow-wrap:anywhere;max-width:100%}.pron{color:#859675;font-size:14px}.flip-hint{font-size:12px;color:#839271;margin-top:34px}.meaning{font-size:29px;font-weight:bold;margin:12px 0}.example{font-size:17px;line-height:1.6}.listen{padding:11px 17px;border:1px solid var(--line);border-radius:30px;background:white;margin:16px auto;display:block;font-size:13px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}.btn{padding:15px 18px;border-radius:12px;font-weight:bold;font-size:14px;background:var(--green);color:white;min-height:48px}.btn.secondary{background:#f3f1e9;color:#706b55}.btn.outline{background:white;border:1px solid var(--line);color:var(--ink)}.tip{text-align:center;font-size:12px;margin-top:18px}.side{display:flex;flex-direction:column;gap:18px}.side h2{font-size:16px;margin:0}.goal-number{font-size:32px;font-weight:bold;letter-spacing:-1px;margin-top:24px}.goal-number small{font-size:14px;font-weight:normal;color:var(--muted)}.seed-art{height:130px;position:relative;display:flex;justify-content:center;align-items:center;background:radial-gradient(ellipse,#e9f0db 0,transparent 65%);margin-top:8px}.stem{width:6px;height:57px;background:#578052;border-radius:10px;position:absolute;bottom:27px}.leaf{position:absolute;width:48px;height:28px;background:#7b9d59;border-radius:4px 40px 4px 40px;top:35px;left:calc(50% - 46px);transform:rotate(13deg)}.leaf.right{left:50%;top:25px;transform:scaleX(-1) rotate(13deg);background:#a0ba75}.soil{width:90px;height:13px;background:#d2ddbd;border-radius:50%;position:absolute;bottom:20px}.stat{padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}.stat:last-child{border:0}.small-card{background:#f1eee4;border:0}.small-card p{font-size:12px;color:#8a826b}.small-card h2{font-size:14px}.nav{display:flex;gap:8px}.nav button{font-size:13px;padding:11px 15px;border-radius:10px}.nav button.active{background:#eaf1df;color:var(--green);font-weight:bold}.section-title{font-size:20px;margin:0 0 12px}.field{width:100%;border:1px solid var(--line);border-radius:12px;padding:14px;background:#fcfcf9;color:var(--ink);margin:10px 0;min-height:48px}.word-list{display:grid;gap:10px;margin-top:15px}.word-item{padding:16px;border:1px solid var(--line);border-radius:12px;display:flex;justify-content:space-between;gap:12px;align-items:center}.word-item b{font-size:18px}.word-item small{display:block;color:var(--muted);margin-top:6px}.word-item .tag{white-space:nowrap}.options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.option{border:1px solid var(--line);padding:18px;border-radius:12px;background:white;min-height:64px}.option.correct{background:#e4f2df;border-color:#77a866;opacity:1}.option.wrong{background:#fbe9e1;border-color:#d99277;opacity:1}.feedback{background:#f4f5ee;padding:18px;border-radius:12px;line-height:1.7}.empty{text-align:center;padding:45px 10px}.empty .emoji{font-size:55px;margin-bottom:20px}textarea{resize:vertical;min-height:260px;font-family:Consolas,monospace;font-size:13px!important;line-height:1.7}.help{font-size:13px;line-height:1.8}.help code{background:#edf1e6;padding:2px 5px;border-radius:4px}.button-row{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 20px}.notice{padding:12px;border-radius:10px;margin:12px 0;background:#eef3e6;font-size:13px;line-height:1.6}.notice.error{background:#fbe9e1;color:#a04830}footer{text-align:center;color:#9caa9e;font-size:11px;letter-spacing:1px;margin-top:30px}#toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#253e36;color:white;padding:13px 22px;border-radius:12px;z-index:5;max-width:90%;width:max-content;font-size:13px;box-shadow:0 4px 20px #0002}#toast:empty{display:none}[hidden]{display:none!important}.session-tools{display:flex;gap:8px;margin-bottom:16px}.session-tools select{border:1px solid var(--line);padding:8px;border-radius:8px;background:white;font-size:12px;max-width:65%}a{color:var(--green)}@media(max-width:740px){header{height:70px;padding:0 20px}.brand{font-size:21px}.header-note{font-size:11px}.nav{position:fixed;bottom:0;left:0;right:0;background:#fffffff5;z-index:4;border-top:1px solid var(--line);justify-content:space-around;padding:10px 10px calc(10px + env(safe-area-inset-bottom))}.nav button{flex:1;padding:13px 3px}.shell{margin:27px auto;padding:0 18px 105px}.intro{margin-bottom:22px}h1{font-size:25px}.intro p{font-size:13px}.date{display:none}.layout{grid-template-columns:1fr;gap:18px}.panel{padding:18px;border-radius:18px}.side{display:grid;grid-template-columns:1fr 1fr;gap:12px}.side .panel{padding:17px}.side .small-card{grid-column:1/-1}.seed-art{height:87px}.leaf{top:13px}.leaf.right{top:3px}.stem{height:42px;bottom:17px}.soil{bottom:10px}.goal-number{margin-top:12px;font-size:27px}.flashcard{min-height:285px}.word{font-size:42px}.tabs{margin-bottom:20px}.options{gap:8px}.option{padding:14px 8px}.side h2{font-size:14px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<style>
+header{max-width:1220px}.nav{gap:0}.nav button{padding:12px 10px}.header-note{font-size:11px}.shell{max-width:1120px}.game-bar{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:-8px 0 24px;font-size:13px;font-weight:bold}.game-bar .chip{margin-left:auto}.chip{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:10px;background:#f0f3e9;border:1px solid #dfe7d5;font-size:13px;color:var(--ink)}.danger{color:#a54734;background:#fff2eb;border-color:#efdad1}.wide{width:100%;margin-top:16px}.centered{justify-content:center}.wrap{flex-wrap:wrap}.hero{padding:24px;background:#edf3e3;border-radius:16px}.hero h2{font-size:23px;line-height:1.5}.hero .btn{margin-top:18px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.metrics>div{padding:16px 8px;background:#f7f8f2;border-radius:14px;text-align:center}.metrics strong{display:block;font-size:25px;margin:7px 0}.metrics small{color:var(--muted);font-size:12px}.setup-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}.control{display:block;font-size:13px;font-weight:bold}.control select{font-weight:normal}.question{padding:25px 16px;border-radius:16px;text-align:center;background:#eff4e7;margin-top:16px}.question h2{font-size:29px;line-height:1.5;overflow-wrap:anywhere}.question p{font-size:13px}.tokens,.sentence-answer{display:flex;flex-wrap:wrap;gap:8px;padding:14px 0}.sentence-answer{border:1px dashed #a6bb8e;min-height:75px;padding:12px;border-radius:12px;margin-top:20px;align-items:center}.tokens .chip{background:white}.word-entry{padding:19px;border:1px solid var(--line);border-radius:14px;overflow-wrap:anywhere}.word-entry b{font-size:22px}.word-entry .button-row{margin:12px 0 0;gap:6px}.word-entry .chip{padding:8px 11px}.meaning-small{font-size:18px;margin:9px 0}.week-chart{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;height:145px;align-items:end;margin-top:24px}.week-chart>div{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:11px}.week-chart i{width:65%;max-width:35px;min-height:3px;display:block;border-radius:5px;background:#8cab6b}.week-chart>div:last-child i{background:var(--green)}.badge-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.badge{padding:15px;border-radius:12px;background:#f1f1eb;text-align:center;color:#7b8276}.badge>div{font-size:32px;filter:grayscale(1);opacity:.5}.badge small,.badge span{display:block;font-size:11px;margin-top:8px}.badge.earned{background:#eaf2dd;color:var(--green)}.badge.earned>div{filter:none;opacity:1}dialog{border:1px solid var(--line);border-radius:20px;padding:24px;max-width:520px;width:calc(100% - 32px);max-height:85dvh;overflow:auto;color:var(--ink)}dialog::backdrop{background:#17322688}dialog h2{font-size:20px}dialog p{font-size:14px}pre{overflow:auto;max-width:100%;padding:15px;border-radius:10px;background:#f2f4eb;font-size:12px}summary{padding:12px 0;cursor:pointer}hr{border:0;border-top:1px solid var(--line);margin:25px 0}.flashcard .example{overflow-wrap:anywhere}.tabs button{min-height:44px}
+@media(max-width:740px){.nav button{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:11px;padding:7px 0}.nav button span{font-size:20px}.game-bar{gap:10px;font-size:11px;margin-top:-5px}.game-bar .chip{font-size:11px;padding:8px}.metrics{gap:8px}.metrics>div{padding:13px 4px}.metrics strong{font-size:23px}.hero{padding:18px}.hero h2{font-size:21px}.setup-grid{gap:6px 12px}.control select{padding:12px 8px;font-size:13px}.question h2{font-size:25px}.word-entry{padding:15px}.button-row{gap:8px}.side{margin-top:0}.header-note{font-size:10px}.sentence-answer .chip,.tokens .chip{padding:10px}dialog{padding:18px}.word-entry .row{flex-wrap:wrap}}
+.panel{min-width:0}.field{max-width:100%}.tag{overflow-wrap:anywhere}.word-entry .row{flex-wrap:wrap}</style></head>
+<body>
+<header><div class="brand"><span class="logo">♧</span> 단어숲</div><nav class="nav" aria-label="주 메뉴"><button class="active" data-page="study">✦ 오늘의 학습</button><button data-page="words">▤ 내 단어장</button><button data-page="import">＋ 단어 추가</button></nav><span class="header-note">하루 한 뼘, 자라는 영어</span></header>
+<main class="shell"><div class="intro"><div><div class="eyebrow">GROW A LITTLE, EVERY DAY</div><h1 id="page-title">오늘도 단어숲에 왔구나!</h1><p id="page-description">하루 5개면 충분해. 작은 단어부터 함께 키워 보자.</p></div><span class="date" id="date"></span></div><div class="layout"><section class="panel" id="content" aria-label="학습 공간"></section><aside class="side"><section class="panel"><div class="row"><h2>오늘의 작은 목표</h2><span>☀</span></div><div class="goal-number"><span id="today-count">0</span> <small>/ 5개</small></div><div class="progress" style="margin:12px 0"><i id="goal-bar"></i></div><p style="font-size:12px" id="goal-message">작은 시작이 큰 숲이 될 거야.</p><div class="seed-art" aria-hidden="true"><span class="soil"></span><span class="stem"></span><span class="leaf"></span><span class="leaf right"></span></div></section><section class="panel"><h2>나의 단어숲</h2><div class="stat row"><span>🌱 전체 단어</span><b id="total-count"></b></div><div class="stat row"><span>🌿 외운 단어</span><b id="known-count"></b></div><div class="stat row"><span>🍂 복습할 단어</span><b id="review-count"></b></div></section><section class="panel small-card"><h2>💡 소리 내어 말해 봐!</h2><p>단어를 듣고 세 번 따라 말해 보자.<br>눈과 귀, 입으로 익히면 더 잘 기억나.</p></section></aside></div><footer>조금씩, 꾸준히. 나만의 단어숲을 키워요.</footer></main><div id="toast" role="status" aria-live="polite"></div>
+<script>const SAMPLE=[{word:'adventure',meaning:'모험',example:'Let’s go on an adventure.',translation:'우리 모험을 떠나자.',category:'일상'},{word:'brave',meaning:'용감한',example:'You are very brave.',translation:'너는 정말 용감해.',category:'마음'},{word:'forest',meaning:'숲',example:'We walk in the forest.',translation:'우리는 숲에서 걸어.',category:'자연'},{word:'promise',meaning:'약속',example:'I keep my promise.',translation:'나는 내 약속을 지켜.',category:'일상'},{word:'wonderful',meaning:'멋진',example:'Have a wonderful day!',translation:'멋진 하루 보내!',category:'마음'},{word:'garden',meaning:'정원',example:'Flowers grow in the garden.',translation:'정원에 꽃이 자라.',category:'자연'},{word:'together',meaning:'함께',example:'We play together.',translation:'우리는 함께 놀아.',category:'일상'},{word:'curious',meaning:'궁금해하는',example:'I am curious about space.',translation:'나는 우주가 궁금해.',category:'마음'},{word:'gentle',meaning:'다정한',example:'She is gentle with animals.',translation:'그녀는 동물들에게 다정해.',category:'마음'},{word:'discover',meaning:'발견하다',example:'We discover a new place.',translation:'우리는 새로운 장소를 발견해.',category:'일상'}];
+</script><script>'use strict';
+const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const id=w=>w.word.trim().toLowerCase(), own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k), clone=x=>JSON.parse(JSON.stringify(x));
+const dk=(d=new Date())=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
+const norm=s=>String(s).normalize('NFKC').toLowerCase().replace(/[’‘]/g,"'").replace(/[.,!?;:"“”]/g,'').replace(/\s+/g,' ').trim();
+const KEY='wordforest-v2';
+function validate(input){
+ if(!Array.isArray(input)||input.length>5000)throw Error('단어 배열 [ … ]을 넣어 주세요. 최대 5,000개예요.');
+ return input.map((w,i)=>{
+  if(!w||typeof w!=='object')throw Error((i+1)+'번째 단어 형식을 확인해 주세요.');
+  const out={};
+  for(const [k,alias] of Object.entries({word:'en',meaning:'ko',type:'type',example:'example',translation:'example_ko',category:'category'})){
+   const v=w[k]??w[alias]??'';
+   if(typeof v!=='string'||v.length>2000)throw Error((i+1)+'번째 '+k+' 값은 2,000자 이하 문자열이어야 해요.');
+   out[k]=v.trim();
+  }
+  if(!out.word||!out.meaning)throw Error((i+1)+'번째 영어(word/en)와 뜻(meaning/ko)이 필요해요.');
+  out.category||='기타';return out;
+ });
+}
+const freshRec=()=>({level:0,due:0,known:false,important:false,correct:0,wrong:0,difficult:false});
+const fresh=()=>({version:2,words:validate(SAMPLE),records:{},days:{},xp:0,combo:0,bestCombo:0,perfect:0,badges:[],tts:true});
+function normalizeState(raw){
+ if(!raw||typeof raw!=='object')throw Error('백업 형식이 맞지 않아요.');
+ const s=fresh();s.words=validate(raw.words);
+ for(const w of s.words){
+  const r=raw.records&&own(raw.records,id(w))?raw.records[id(w)]:null;if(!r||typeof r!=='object')continue;
+  const n=freshRec();
+  for(const k of ['level','due','correct','wrong'])n[k]=Number.isFinite(r[k])?Math.max(0,r[k]):0;
+  n.level=Math.min(5,Math.floor(n.level));n.known=typeof r.known==='boolean'?r.known:n.level>=2;n.important=r.important===true;n.difficult=r.difficult===true;
+  Object.defineProperty(s.records,id(w),{value:n,enumerable:true,writable:true,configurable:true});
+ }
+ if(raw.days&&typeof raw.days==='object')for(const [k,v] of Object.entries(raw.days)){
+  const m=k.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(!m)continue;
+  const day=m[1]+'-'+m[2].padStart(2,'0')+'-'+m[3].padStart(2,'0'),list=Array.isArray(v)?v:v?.words;
+  if(Array.isArray(list))s.days[day]={words:[...new Set(list.filter(x=>typeof x==='string'))],quiz:Math.max(0,Number(v.quiz)||0),correct:Math.max(0,Number(v.correct)||0)};
+ }
+ for(const k of ['xp','combo','bestCombo','perfect'])s[k]=Number.isFinite(raw[k])?Math.max(0,Math.floor(raw[k])):0;
+ s.tts=raw.tts!==false;s.badges=Array.isArray(raw.badges)?raw.badges.filter(x=>typeof x==='string'):[];
+ return s;
+}
+let state=fresh(),warning='';
+try{const saved=localStorage.getItem(KEY)||localStorage.getItem('wordforest-v1');if(saved)state=normalizeState(JSON.parse(saved));}catch{warning='저장 데이터를 읽지 못했어요. 원본 저장 데이터는 지우지 않았습니다.';}
+let page='home',session=null,search='',listFilter='all',draft='',inputMode='json',importMessage='',undoData=null;
+let settings={direction:'ko2en',type:'choice4',range:'all',category:'all',count:'5'},cardSettings={range:'all',category:'all',count:'5'};
+function rec(w){return own(state.records,id(w))?state.records[id(w)]:freshRec();}
+function setRec(w,r){Object.defineProperty(state.records,id(w),{value:r,enumerable:true,writable:true,configurable:true});}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch{toast('저장하지 못했어요. 추가 메뉴에서 전체 백업을 내려받아 주세요.');}}
+function toast(t){$('#toast').textContent=t;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').textContent='',4200);}
+function totals(){const rs=state.words.map(rec);return {known:rs.filter(r=>r.known).length,correct:rs.reduce((n,r)=>n+r.correct,0),wrong:rs.reduce((n,r)=>n+r.wrong,0),due:state.words.filter(w=>rec(w).due<=Date.now()).length};}
+function streak(){let d=new Date();if(!state.days[dk(d)]?.words.length)d.setDate(d.getDate()-1);let n=0;while(state.days[dk(d)]?.words.length){n++;d.setDate(d.getDate()-1);}return n;}
+function rank(){const n=totals().known;return n>=100?'🏆 단어 마스터':n>=50?'🌳 단어 달인':n>=10?'🌿 숲 탐험가':'🌱 새싹 탐험가';}
+const BADGES=[['first','🌱','첫걸음','단어 1개 공부'],['combo','💎','콤보 10','퀴즈 10문제 연속 정답'],['streak','🔥','3일 연속','3일 연속 학습'],['expert','📖','단어 달인','50개 암기 완료'],['master','🏆','단어 마스터','100개 암기 완료'],['xp','⚡','XP 100','100 XP 달성'],['perfect','🛡️','무적','5문제 이상 퀴즈에서 모두 정답']];
+function unlock(){const t=totals(),conditions={first:Object.values(state.days).some(d=>d.words.length),combo:state.bestCombo>=10,streak:streak()>=3,expert:t.known>=50,master:t.known>=100,xp:state.xp>=100,perfect:state.perfect>0};for(const [k,,name] of BADGES)if(conditions[k]&&!state.badges.includes(k)){state.badges.push(k);toast('새 뱃지! '+name+' 🎉');}}
+function activity(w,ok,quiz=false){
+ const r={...rec(w)};r.level=ok?Math.min(5,r.level+1):0;r.difficult=!ok;r.known=ok?r.known||r.level>=2:false;r.due=Date.now()+(ok?[1,3,7,14,30][r.level-1]*86400000:0);
+ if(quiz){if(ok)r.correct++;else r.wrong++;}setRec(w,r);
+ const day=dk();state.days[day]||={words:[],quiz:0,correct:0};const d=state.days[day],first=!d.words.includes(id(w));if(first)d.words.push(id(w));
+ if(quiz){d.quiz++;if(ok)d.correct++;state.combo=ok?state.combo+1:0;state.bestCombo=Math.max(state.combo,state.bestCombo);
+  if(ok)state.xp+=10;
+ }else if(first)state.xp+=ok?5:2;
+ unlock();save();updateChrome();
+}
+function shuffle(items){const a=items.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function selectPool(cfg){
+ let a=state.words.filter(w=>(cfg.category==='all'||w.category===cfg.category)&&(cfg.range==='all'||cfg.range==='half'||cfg.range==='important'&&rec(w).important||cfg.range==='review'&&rec(w).due<=Date.now()||cfg.range==='wrong'&&rec(w).wrong>0||cfg.range==='unlearned'&&!rec(w).known));
+ a=shuffle(a);return cfg.range==='half'?a.slice(0,Math.ceil(a.length/2)):a;
+}
+function btn(action,label,style='btn',extra=''){return '<button class="'+style+'" data-action="'+action+'" '+extra+'>'+label+'</button>';}
+function options(entries,value){return entries.map(([v,l])=>'<option value="'+esc(v)+'" '+(v===value?'selected':'')+'>'+esc(l)+'</option>').join('');}
+const ranges=[['all','전체 단어'],['half','전체의 50%'],['important','⭐ 중요 단어'],['review','오늘 복습'],['wrong','틀린 단어'],['unlearned','아직 외우는 중']];
+const types=[['typing','⌨️ 타이핑'],['choice4','🔢 4지선다'],['fill','✏️ 빈칸'],['sentence','🔤 문장'],['mixed','🎲 혼합']];
+function select(label,key,entries,value,kind='quiz'){return '<label class="control">'+label+'<select class="field" data-setting="'+key+'" data-kind="'+kind+'">'+options(entries,value)+'</select></label>';}
+function updateChrome(){
+ const t=totals(),n=state.days[dk()]?.words.length||0;
+ $('#today-count').textContent=n;$('#goal-bar').style.width=Math.min(n*20,100)+'%';$('#goal-message').textContent=n>=5?'오늘 목표 달성! 정말 잘했어.':'하루 5개, 조금씩 자라 보자.';
+ $('#total-count').textContent=state.words.length+'개';$('#known-count').textContent=t.known+'개';$('#review-count').textContent=t.due+'개';
+ $('#game-bar').innerHTML='<span>⚡ '+state.xp+' XP</span><span>🔥 '+streak()+'일</span>'+btn('tts',state.tts?'🔊 소리 켜짐':'🔇 소리 꺼짐','chip');
+ document.querySelectorAll('[data-page]').forEach(b=>{b.classList.toggle('active',b.dataset.page===page);b.setAttribute('aria-current',b.dataset.page===page?'page':'false');});
+}
+function go(p){if(session&&page!==p){session=null;if('speechSynthesis'in window)speechSynthesis.cancel();}page=p;render();}
+function render(){
+ updateChrome();const titles={home:['오늘도 단어숲에 왔구나!','하루 5개면 충분해. 작은 단어부터 함께 키워 보자.'],cards:['카드를 톡, 기억이 쏙!','뜻을 떠올리고 뒤집어 봐. 모르는 단어도 괜찮아.'],quiz:['오늘은 어떤 퀴즈를 풀까?','다섯 가지 방법으로 단어를 더 오래 기억해 봐.'],words:['내가 키우는 단어들','중요한 단어에는 별을 달고, 외운 단어는 표시해 봐.'],import:['새로운 단어를 심어 볼까?','JSON과 엑셀 붙여넣기로 단어를 간단히 추가해요.'],stats:['이만큼 자랐어!','매일의 작은 노력이 멋진 숲이 되고 있어.']};
+ $('#page-title').textContent=titles[page][0];$('#page-description').textContent=titles[page][1];
+ if(session&&(page==='cards'||page==='quiz'))renderSession();
+ else ({home:renderHome,cards:()=>renderSetup('cards'),quiz:()=>renderSetup('quiz'),words:renderWords,import:renderImport,stats:renderStats})[page]();
+}
+function renderHome(){
+ const t=totals(),rate=t.correct+t.wrong?Math.round(t.correct/(t.correct+t.wrong)*100):0;
+ $('#content').innerHTML='<div class="hero"><span class="tag">TODAY’S LITTLE STEP</span><h2>🌿 오늘 복습할 단어 '+t.due+'개</h2><p>어제의 기억을 다시 꺼내 볼까?</p>'+btn('review','복습 시작 →')+'</div><div class="metrics">'+[['⚡',state.xp,'총 XP'],['🔥',streak()+'일','연속 학습'],['📖',t.known,'암기 완료'],['🏅',state.badges.length,'획득 뱃지'],['🎯',rate+'%','정답률'],['💎',state.bestCombo,'최고 콤보']].map(([a,b,c])=>'<div><span>'+a+'</span><strong>'+b+'</strong><small>'+c+'</small></div>').join('')+'</div><div class="notice">'+rank()+' · 마스터까지 '+Math.max(0,100-t.known)+'개<br><span class="subtle">퀴즈는 횟수 제한 없이 풀 수 있어. 틀린 단어도 다시 도전해 보자.</span></div><div class="button-row">'+btn('nav-quiz','🎯 퀴즈')+btn('nav-cards','🃏 카드','btn outline')+btn('badges','🏅 뱃지','btn outline')+'</div>';
+}
+function renderSetup(kind){
+ const cfg=kind==='cards'?cardSettings:settings,cats=[['all','모든 주제'],...[...new Set(state.words.map(w=>w.category))].map(x=>[x,x])];
+ $('#content').innerHTML='<h2 class="section-title">'+(kind==='cards'?'🃏 카드 학습':'🎯 퀴즈 설정')+'</h2><div class="setup-grid">'+(kind==='quiz'?select('문제 방향','direction',[['ko2en','한글 → 영어'],['en2ko','영어 → 한글'],['both','랜덤 방향']],cfg.direction)+select('퀴즈 유형','type',types,cfg.type):'')+select('학습 범위','range',ranges,cfg.range,kind)+select('주제','category',cats,cfg.category,kind)+select('이번에 공부할 개수','count',[['5','5개 · 가볍게'],['10','10개'],['20','20개'],['all','선택 범위 전체']],cfg.count,kind)+'</div><p class="help">빈칸은 예문 속 단어를 쓰고, 문장은 단어 조각을 순서대로 눌러 완성해요. 두 유형은 영어 예문으로 진행합니다. 예문이 없는 단어는 해당 유형에서 제외돼요.</p><div class="notice" id="setup-info"></div>'+btn('start-'+kind,(kind==='cards'?'카드':'퀴즈')+' 시작 →','btn wide');setupInfo();
+}
+function tokens(w){return (w.example||'').trim().split(/\s+/).filter(Boolean);}
+function blankRegex(w){return new RegExp('(^|[^a-zA-Z])('+w.word.replace(/[.*+?^{}()|[\]\\$]/g,'\\$&')+')(?=$|[^a-zA-Z])','i');}
+function eligible(w,type){if(type==='fill')return Boolean(w.example&&blankRegex(w).test(w.example));if(type==='sentence')return tokens(w).length>=2;return true;}
+function setupInfo(){
+ const cfg=page==='cards'?cardSettings:settings,pool=selectPool({...cfg,range:cfg.range==='half'?'all':cfg.range}).filter(w=>page!=='quiz'||eligible(w,cfg.type));
+ const n=cfg.range==='half'?Math.ceil(pool.length/2):pool.length;$('#setup-info').textContent='이 범위에서 '+Math.min(n,cfg.count==='all'?n:Number(cfg.count))+'개를 공부해요.';
+}
+function start(kind){
+ const cfg={...(kind==='cards'?cardSettings:settings)};
+ let pool=selectPool({...cfg,range:cfg.range==='half'?'all':cfg.range}).filter(w=>kind==='cards'||eligible(w,cfg.type));
+ if(cfg.range==='half')pool=pool.slice(0,Math.ceil(pool.length/2));if(cfg.count!=='all')pool=pool.slice(0,Number(cfg.count));
+ if(!pool.length){toast('이 조건에 맞는 단어가 없어요. 범위를 바꾸거나 예문을 추가해 주세요.');return;}
+ session={kind,cfg,words:pool,index:0,correct:0,answers:[],revealed:false,answered:false,question:null,finished:false};state.combo=0;page=kind;render();autoSpeak();
+}
+function makeQuestion(w){
+ let type=session.cfg.type;
+ if(type==='mixed')type=shuffle(['typing','choice4',...(eligible(w,'fill')?['fill']:[]),...(eligible(w,'sentence')?['sentence']:[])])[0];
+ const direction=session.cfg.direction==='both'?(Math.random()<.5?'ko2en':'en2ko'):session.cfg.direction,target=direction==='ko2en'?w.word:w.meaning;
+ let choices=[];if(type==='choice4'){choices=shuffle([target,...shuffle([...new Set(state.words.map(x=>direction==='ko2en'?x.word:x.meaning))].filter(x=>norm(x)!==norm(target))).slice(0,3)]);if(choices.length<2)type='typing';}
+ return {type,direction,target,choices,picked:[],tokens:shuffle(tokens(w).map((text,i)=>({text,uid:i}))),input:''};
+}
+function autoSpeak(){if(!state.tts||!session||session.finished)return;const w=session.words[session.index];if(session.kind==='cards'||session.question?.direction==='en2ko'&&!['sentence','fill'].includes(session.question.type))speak(w.word);}
+function renderSession(){
+ if(session.finished)return renderResult();const w=session.words[session.index];
+ let html='<div class="row"><span class="tag">'+esc(w.category)+' · '+(session.index+1)+' / '+session.words.length+'</span>'+btn('quit','그만하기','chip')+'</div><div class="progress"><i style="width:'+session.index/session.words.length*100+'%"></i></div>';
+ if(session.kind==='cards'){
+  html+='<button class="flashcard" data-action="flip"><span class="card-number">TAP TO REMEMBER</span><div class="word">'+esc(w.word)+'</div><span class="subtle">'+esc(w.type)+'</span>'+(session.revealed?'<div class="meaning">'+esc(w.meaning)+'</div><div class="example">'+esc(w.example)+'</div><p>'+esc(w.translation)+'</p>':'<p class="flip-hint">카드를 누르면 뜻이 보여</p>')+'</button><div class="button-row centered">'+btn('speak-word','🔊 단어 듣기','chip')+btn('star',rec(w).important?'★ 중요 단어':'☆ 중요 표시','chip')+(session.revealed&&w.example?btn('speak-example','🔊 예문 듣기','chip'):'')+'</div><div class="actions">'+btn('card-again','😅 다시 볼래','btn secondary',session.revealed?'':'disabled')+btn('card-know','😎 기억했어!','btn',session.revealed?'':'disabled')+'</div>';
+ }else{
+  session.question||=makeQuestion(w);const q=session.question;
+  let prompt=q.direction==='ko2en'?w.meaning:w.word,help=q.direction==='ko2en'?'영어로 써 볼까?':'우리말 뜻은 무엇일까?';
+  if(q.type==='fill'){prompt=w.example.replace(blankRegex(w),(_,prefix)=>prefix+' ______ ');help='빈칸에 들어갈 영어 단어는?';}
+  if(q.type==='sentence'){prompt=w.translation||w.meaning;help='단어 조각을 눌러 영어 문장을 완성해 봐.';}
+  html+='<div class="row"><span class="subtle">'+types.find(x=>x[0]===q.type)[1]+'</span><span class="subtle">✓ '+session.correct+' · 콤보 '+state.combo+'</span></div><div class="question"><p>'+help+'</p><h2>'+esc(prompt)+'</h2>'+(['fill','sentence'].includes(q.type)?'<span class="subtle">'+esc(q.type==='fill'?w.translation:w.word)+'</span>':'')+'</div>';
+  if(q.type==='choice4')html+='<div class="options">'+q.choices.map((c,i)=>'<button class="option '+(session.answered?(norm(c)===norm(q.target)?'correct':String(i)===q.input?'wrong':''):'')+'" data-action="choice" data-index="'+i+'" '+(session.answered?'disabled':'')+'>'+esc(c)+'</button>').join('')+'</div>';
+  else if(q.type==='sentence')html+='<div class="sentence-answer" aria-label="만든 문장">'+(q.picked.length?q.picked.map((uid,i)=>btn('unpick',esc(q.tokens.find(x=>x.uid===uid).text),'chip','data-index="'+i+'" '+(session.answered?'disabled':''))).join(''):'<span class="subtle">아래 단어를 순서대로 눌러 줘.</span>')+'</div><div class="tokens">'+q.tokens.map(t=>btn('pick',esc(t.text),'chip','data-index="'+t.uid+'" '+(session.answered||q.picked.includes(t.uid)?'disabled':''))).join('')+'</div>';
+  else html+='<form id="answer-form"><label for="answer-input" class="subtle">정답 입력</label><input id="answer-input" class="field" autocomplete="off" autocapitalize="off" spellcheck="false" value="'+esc(q.input)+'" '+(session.answered?'disabled':'')+' placeholder="'+(q.type==='fill'||q.direction==='ko2en'?'영어를 입력해 줘':'뜻을 입력해 줘')+'"><button class="btn wide" '+(session.answered?'disabled':'')+'>정답 확인 →</button></form>';
+  if(!session.answered)html+='<div class="button-row">'+(q.type==='sentence'?btn('submit','문장 확인','btn'):'')+btn('hint','💡 힌트','chip')+btn('skip','모르겠어','chip')+'</div>';
+  else html+='<div class="feedback" role="status"><b>'+(q.ok?'정답! 정말 잘했어. +10 XP':'괜찮아, 다시 기억해 보자.')+'</b><p>정답: <strong>'+esc(q.type==='sentence'?w.example:q.type==='fill'?w.word:q.target)+'</strong></p><p>'+esc(w.example)+'<br>'+esc(w.translation)+'</p>'+btn('speak-word','🔊 단어','chip')+(w.example?btn('speak-example','🔊 예문','chip'):'')+'</div>'+btn('next','다음 →','btn wide');
+ }$('#content').innerHTML=html;
+ const form=$('#answer-form');if(form)form.onsubmit=e=>{e.preventDefault();submitAnswer();};
+ const input=$('#answer-input');if(input)input.oninput=e=>session.question.input=e.target.value;
+}
+function koreanMeaningMatches(answer,meaning){
+ const clean=s=>norm(String(s).replace(/\([^)]*\)|\[[^\]]*\]|（[^）]*）/g,'').replace(/^\s*(?:\d+\s*[.)、:]|[①-⑳])\s*/u,'').replace(/[~∼～]/g,''));
+ const given=clean(answer);
+ if(!given)return false;
+ const parts=String(meaning).split(/[,，;；/／、·ㆍ•|\r\n]+|\s+(?:또는|혹은)\s+/u);
+ return [meaning,...parts].some(part=>clean(part)===given);
+}
+function matches(answer,w,q){if(q.type==='sentence')return norm(answer)===norm(w.example);if(q.type==='fill'||q.direction==='ko2en')return norm(answer)===norm(w.word);return koreanMeaningMatches(answer,w.meaning);}
+function submitAnswer(forced=false){
+ if(!session||session.kind!=='quiz'||session.answered)return;
+ const q=session.question,w=session.words[session.index],value=q.type==='choice4'?q.choices[Number(q.input)]:q.type==='sentence'?q.picked.map(uid=>q.tokens.find(t=>t.uid===uid).text).join(' '):q.input;
+ if(!forced&&!String(value||'').trim()){toast('답을 먼저 적거나 골라 줘.');return;}
+ q.ok=!forced&&matches(value,w,q);session.answered=true;if(q.ok)session.correct++;session.answers.push({word:id(w),ok:q.ok});activity(w,q.ok,true);renderSession();
+}
+function next(){
+ if(!session)return;session.index++;
+ if(session.index>=session.words.length){session.finished=true;if(session.kind==='quiz'&&session.words.length>=5&&session.correct===session.words.length){state.perfect++;unlock();save();}}
+ else{session.question=null;session.revealed=false;session.answered=false;}render();autoSpeak();
+}
+function renderResult(){
+ const isQuiz=session.kind==='quiz';$('#content').innerHTML='<div class="empty"><div class="emoji">🌳</div><h2>'+'단어숲이 한 뼘 자랐어!'+'</h2><p>'+session.answers.length+'개 공부 완료'+(isQuiz?' · '+session.correct+'개 정답':'')+'</p><p>'+'틀려도 괜찮아. 다시 만나면 더 잘 기억나.'+'</p><div class="button-row centered">'+btn('restart','다시 설정하기')+btn('nav-cards','카드로 연습','btn outline')+'</div></div>'+session.answers.filter(a=>!a.ok).map(a=>{const w=state.words.find(x=>id(x)===a.word);return '<div class="word-item"><b>'+esc(w?.word)+'</b><span>'+esc(w?.meaning)+'</span></div>';}).join('');
+}
+function renderWords(){
+ $('#content').innerHTML='<div class="row wrap"><h2 class="section-title">📚 내 단어장 · '+state.words.length+'개</h2>'+btn('export','단어 내보내기','chip')+'</div><input class="field" id="search" type="search" aria-label="단어 검색" placeholder="영어, 뜻, 주제 검색" value="'+esc(search)+'"><select class="field" id="list-filter" aria-label="목록 필터">'+options([['all','모든 단어'],['important','⭐ 중요 단어'],['known','암기 완료'],['unlearned','암기 중'],['wrong','틀린 단어']],listFilter)+'</select><div class="word-list" id="word-list"></div><div class="button-row">'+btn('reset-memory','암기 기록 초기화','chip')+btn('delete-all','모든 단어 삭제','chip danger')+'</div><p class="help">자동 암기는 연속 학습 성공 2회부터예요. 직접 ‘암기 완료’를 표시할 수도 있어요.</p>';
+ $('#search').oninput=e=>{search=e.target.value;drawWords();};$('#list-filter').onchange=e=>{listFilter=e.target.value;drawWords();};drawWords();
+}
+function drawWords(){
+ const list=state.words.filter(w=>norm(w.word+' '+w.meaning+' '+w.category).includes(norm(search))&&(listFilter==='all'||listFilter==='known'&&rec(w).known||listFilter==='important'&&rec(w).important||listFilter==='unlearned'&&!rec(w).known||listFilter==='wrong'&&rec(w).wrong>0));
+ $('#word-list').innerHTML=list.length?list.map(w=>{const i=state.words.indexOf(w),r=rec(w);return '<article class="word-entry"><div class="row"><div><b>'+esc(w.word)+'</b> <span class="subtle">'+esc(w.type)+'</span></div><span class="tag">'+esc(w.category)+'</span></div><div class="meaning-small">'+esc(w.meaning)+'</div><p class="help">'+esc(w.example)+'<br>'+esc(w.translation)+'</p><div class="button-row">'+btn('word-known',r.known?'✓ 암기 완료':'○ 암기하기','chip','data-index="'+i+'" aria-pressed="'+r.known+'"')+btn('word-star',r.important?'★ 중요':'☆ 중요','chip','data-index="'+i+'" aria-pressed="'+r.important+'"')+btn('word-speak','🔊 발음','chip','data-index="'+i+'"')+btn('word-delete','삭제','chip danger','data-index="'+i+'"')+'</div></article>';}).join(''):'<div class="empty"><p>해당하는 단어가 없어요. 단어를 추가하거나 검색 조건을 바꿔 주세요.</p></div>';
+}
+function renderStats(){
+ const t=totals(),rate=t.correct+t.wrong?Math.round(t.correct/(t.correct+t.wrong)*100):0,progress=state.words.length?Math.round(t.known/state.words.length*100):0;
+ const dates=Array.from({length:7},(_,i)=>{const d=new Date();d.setDate(d.getDate()-6+i);return dk(d);}),max=Math.max(1,...dates.map(k=>state.days[k]?.quiz||0));
+ $('#content').innerHTML='<h2 class="section-title">📊 나의 학습 기록</h2><div class="metrics">'+[[state.words.length,'전체'],[t.known,'암기 완료'],[rate+'%','정답률'],[state.words.filter(w=>rec(w).wrong>0).length,'틀린 단어'],[streak()+'일','연속 학습'],[state.bestCombo,'최고 콤보']].map(([n,l])=>'<div><strong>'+n+'</strong><small>'+l+'</small></div>').join('')+'<h3>'+rank()+'</h3><p>암기 진행률 '+t.known+'/'+state.words.length+' · '+progress+'%</p><div class="progress"><i style="width:'+progress+'%"></i></div><h3>📅 최근 7일 퀴즈</h3><div class="week-chart">'+dates.map((k,i)=>'<div><span>'+(state.days[k]?.quiz||0)+'</span><i style="height:'+Math.max(3,(state.days[k]?.quiz||0)/max*90)+'px"></i><small>'+(i===6?'오늘':k.slice(5))+'</small></div>').join('')+'</div><p class="help">오늘 '+(state.days[dk()]?.quiz||0)+'문제 · 정답 '+(state.days[dk()]?.correct||0)+'개</p><h3>다시 보면 좋은 단어</h3>'+state.words.filter(w=>rec(w).wrong>0).sort((a,b)=>rec(b).wrong-rec(a).wrong).slice(0,10).map(w=>'<div class="stat row"><span>'+esc(w.word)+' · '+esc(w.meaning)+'</span><b>오답 '+rec(w).wrong+'회</b></div>').join('')+(!t.wrong?'<p>🎉 아직 틀린 단어가 없어!</p>':'')+'<div class="button-row">'+btn('wrong-quiz','오답 퀴즈')+btn('badges','🏅 뱃지','btn outline')+btn('reset-quiz','퀴즈 기록 초기화','chip')+btn('backup','전체 백업','chip')+'</div>';
+}
+const JSON_SAMPLE=[{en:'brave',type:'adjective',ko:'용감한',example:'You are very brave.',example_ko:'너는 정말 용감해.',category:'마음'},{en:'forest',type:'noun',ko:'숲',example:'We walk in the forest.',example_ko:'우리는 숲에서 걸어.',category:'자연'}];
+const TSV_SAMPLE='apple\t사과\tI like apples.\t나는 사과를 좋아해.\tnoun\t음식\nbrave\t용감한\tYou are brave.\t너는 용감해.\tadjective\t마음';
+function renderImport(){
+ const desc={json:'word/meaning 형식과 참고 앱의 en/ko 형식을 모두 읽어요.',tsv:'영어 → 뜻 → 예문 → 번역 → 품사 → 주제 순서로 탭을 구분해 붙여넣으세요. 앞의 2칸은 필수예요.',reset:'학습 기록을 초기화할 영어 단어를 한 줄에 하나씩 적어 주세요. 단어와 중요 표시는 유지돼요.'};
+ $('#content').innerHTML='<h2 class="section-title">＋ 단어 추가 및 관리</h2><div class="tabs">'+[['json','JSON'],['tsv','직접 입력'],['reset','범위 초기화']].map(([m,l])=>btn('input-mode',l,m===inputMode?'active':'','data-mode="'+m+'"')).join('')+'</div><p class="help">'+desc[inputMode]+'</p><div class="button-row">'+btn('copy-sample','샘플 복사','chip')+btn('sample-file','샘플 파일','chip')+btn('copy-prompt','단어 생성 요청문 복사','chip')+'</div><details><summary>JSON 샘플 보기</summary><pre>'+esc(JSON.stringify(JSON_SAMPLE,null,2))+'</pre></details><label for="import-input" class="help">내용 붙여넣기</label><textarea id="import-input" class="field" spellcheck="false">'+esc(draft)+'</textarea><div class="button-row">'+btn('import',inputMode==='reset'?'이 단어들의 기록 초기화':'단어장에 추가')+btn('file','파일 불러오기','btn outline')+btn('clear-input','입력 지우기','chip')+'</div><input hidden id="file-input" type="file" accept=".json,.tsv,.txt"><div id="import-status" role="status" class="notice" '+(!importMessage?'hidden':'')+'>'+esc(importMessage)+'</div><p class="help">같은 영어 단어는 업데이트돼요. 뜻·예문이 바뀌면 그 단어의 학습 기록만 초기화해요. 기존 중요 표시는 유지됩니다.</p><hr><h3>데이터 보관</h3><div class="button-row">'+btn('builtin','기본 단어 추가','chip')+btn('export','단어만 내보내기','chip')+btn('backup','단어＋기록 전체 백업','chip')+btn('restore','전체 백업 복원','chip')+'</div><input hidden id="restore-input" type="file" accept=".json"><p class="help">이 기기의 브라우저에 저장돼요. 기기를 옮길 때는 전체 백업을 복원하세요. 복원하면 현재 자료가 백업 내용으로 바뀝니다.</p><div class="button-row">'+btn('delete-all','전체 단어 삭제','chip danger')+(undoData?btn('undo','마지막 변경 되돌리기','chip'):'')+'</div>';
+ $('#import-input').oninput=e=>draft=e.target.value;
+ $('#file-input').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;if(f.size>5*1024*1024)throw Error('파일은 5MB까지 읽을 수 있어요.');draft=await f.text();if(inputMode!=='reset')inputMode=f.name.endsWith('.json')?'json':'tsv';importMessage='파일을 읽었어요. 확인 후 추가 버튼을 눌러 주세요.';renderImport();}catch(e){showImport(e.message);}};
+ $('#restore-input').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;if(f.size>10*1024*1024)throw Error('백업 파일은 10MB까지 지원해요.');const raw=JSON.parse((await f.text()).replace(/^\uFEFF/,''));if(raw.app!=='wordforest'||raw.version!==2)throw Error('단어숲 전체 백업 파일이 아니에요.');const restored=normalizeState(raw.data);confirmAction('백업 복원',restored.words.length+'개 단어와 학습 기록으로 바꿀까요? 현재 자료는 되돌리기로 복구할 수 있어요.',()=>{checkpoint();state=restored;session=null;save();render();toast('전체 백업을 복원했어요.');});}catch(e){showImport(e instanceof SyntaxError?'올바른 JSON 백업을 선택해 주세요.':e.message);}};
+}
+function showImport(t){importMessage=t;const target=$('#import-status');if(target){target.hidden=false;target.textContent=t;}}
+function parseTSV(text){return validate(text.trim().split(/\r?\n/).filter(x=>x.trim()).map(line=>{const [word,meaning,example='',translation='',type='',category='']=line.split('\t');return {word,meaning,example,translation,type,category};}));}
+function checkpoint(){undoData=clone(state);$('#undo-strip').hidden=false;}
+function mergeWords(words){
+ if(!words.length)throw Error('추가할 단어가 없어요.');
+ const map=new Map(state.words.map(w=>[id(w),w])),incoming=new Map(words.map(w=>[id(w),w]));
+ if(new Set([...map.keys(),...incoming.keys()]).size>5000)throw Error('단어장은 최대 5,000개까지 저장할 수 있어요.');
+ checkpoint();let added=0,updated=0;
+ for(const [k,w] of incoming){if(map.has(k)){updated++;const old=map.get(k);if(old.meaning!==w.meaning||old.example!==w.example||old.translation!==w.translation){const r=freshRec();r.important=rec(old).important;setRec(w,r);}}else added++;map.set(k,w);}
+ state.words=[...map.values()];save();updateChrome();return added+'개 추가, '+updated+'개 업데이트했어요.';
+}
+function doImport(){
+ try{
+  if(inputMode==='reset'){const keys=new Set(draft.split(/\r?\n/).map(x=>x.trim().toLowerCase()).filter(Boolean)),words=state.words.filter(w=>keys.has(id(w)));if(!words.length)throw Error('일치하는 영어 단어가 없어요.');
+   confirmAction('선택 단어 초기화',words.length+'개 단어의 암기·퀴즈 기록을 초기화할까요?',()=>{checkpoint();for(const w of words){const r=freshRec();r.important=rec(w).important;setRec(w,r);}save();updateChrome();showImport(words.length+'개 단어의 기록을 초기화했어요.');});return;
+  }showImport(mergeWords(inputMode==='json'?validate(JSON.parse(draft.replace(/^\uFEFF/,''))):parseTSV(draft)));
+ }catch(e){showImport(e instanceof SyntaxError?'JSON 형식이 맞지 않아요. 큰따옴표·쉼표·대괄호를 확인해 주세요.':e.message);}
+}
+function exportWords(){download(state.words.map(w=>({en:w.word,type:w.type,ko:w.meaning,example:w.example,example_ko:w.translation,category:w.category})),'wordforest-words.json');}
+function download(value,name){const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+async function copy(text){try{await navigator.clipboard.writeText(text);toast('복사했어요! 원하는 곳에 붙여넣어 주세요.');}catch{openModal('복사할 내용','<p>아래 내용을 길게 눌러 복사하거나 Ctrl+C를 눌러 주세요.</p><textarea id="copy-fallback" class="field" readonly>'+esc(text)+'</textarea>');$('#copy-fallback').select();}}
+function speak(text){if(!state.tts){toast('위쪽의 소리를 먼저 켜 주세요.');return;}if(!('speechSynthesis'in window)){toast('이 브라우저는 발음을 지원하지 않아요.');return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';u.rate=.8;u.onerror=()=>toast('발음을 재생하지 못했어요. 기기의 영어 음성을 확인해 주세요.');speechSynthesis.speak(u);}
+let modalCallback=null;
+function openModal(title,body){$('#modal-title').textContent=title;$('#modal-body').innerHTML=body;$('#dialog').showModal();}
+function confirmAction(title,text,callback){modalCallback=callback;openModal(title,'<p>'+esc(text)+'</p><div class="button-row">'+btn('confirm','확인')+btn('close-modal','취소','btn outline')+'</div>');}
+function showBadges(){openModal('🏅 나의 뱃지 · '+state.badges.length+'/7','<div class="badge-grid">'+BADGES.map(([k,icon,name,desc])=>'<div class="badge '+(state.badges.includes(k)?'earned':'')+'"><div>'+icon+'</div><b>'+name+'</b><small>'+desc+'</small><span>'+(state.badges.includes(k)?'획득 완료':'도전 중')+'</span></div>').join('')+'</div>');}
+function resetMemory(){confirmAction('암기 기록 초기화','모든 단어를 암기 전 상태로 바꿔요. 퀴즈 정답·오답 횟수와 중요 표시는 유지돼요.',()=>{checkpoint();for(const w of state.words)setRec(w,{...rec(w),known:false,level:0,due:0,difficult:false});save();render();});}
+function resetQuiz(){confirmAction('퀴즈 기록 초기화','정답·오답 횟수, 최근 7일 퀴즈 기록과 콤보를 초기화해요. XP·뱃지·암기 상태는 유지돼요.',()=>{checkpoint();for(const w of state.words)setRec(w,{...rec(w),correct:0,wrong:0});for(const d of Object.values(state.days)){d.quiz=0;d.correct=0;}state.combo=0;state.bestCombo=0;save();render();});}
+function onAction(action,b){
+ const i=Number(b.dataset.index),w=state.words[i];if(action.startsWith('nav-'))return go(action.slice(4));
+ switch(action){
+ case 'tts':state.tts=!state.tts;if(!state.tts&&'speechSynthesis'in window)speechSynthesis.cancel();save();updateChrome();break;
+ case 'review':cardSettings.range='review';go('cards');break;
+ case 'wrong-quiz':settings.range='wrong';go('quiz');break;
+ case 'badges':showBadges();break;
+ case 'close-modal':$('#dialog').close();modalCallback=null;break;
+ case 'confirm':{const cb=modalCallback;modalCallback=null;$('#dialog').close();cb?.();break;}
+ case 'start-cards':start('cards');break;
+ case 'start-quiz':start('quiz');break;
+ case 'flip':session.revealed=!session.revealed;renderSession();break;
+ case 'speak-word':speak(session.words[session.index].word);break;
+ case 'speak-example':speak(session.words[session.index].example);break;
+ case 'star':{const word=session.words[session.index];setRec(word,{...rec(word),important:!rec(word).important});save();renderSession();break;}
+ case 'card-again':case 'card-know':if(!session.revealed)return;{const word=session.words[session.index],ok=action==='card-know';activity(word,ok);session.answers.push({word:id(word),ok});next();break;}
+ case 'choice':if(session.answered)return;session.question.input=String(i);submitAnswer();break;
+ case 'submit':submitAnswer();break;
+ case 'skip':submitAnswer(true);break;
+ case 'pick':if(session.answered||session.question.picked.includes(i))return;session.question.picked.push(i);renderSession();break;
+ case 'unpick':if(session.answered)return;session.question.picked.splice(i,1);renderSession();break;
+ case 'hint':{const q=session.question,word=session.words[session.index];toast(q.type==='sentence'?'첫 단어: '+tokens(word)[0]:'첫 글자: '+(q.type==='fill'?word.word:q.target).slice(0,1));break;}
+ case 'next':if(session.answered)next();break;
+ case 'quit':confirmAction('학습 그만하기','지금까지 공부한 기록은 저장돼요. 설정 화면으로 돌아갈까요?',()=>{session=null;render();});break;
+ case 'restart':session=null;render();break;
+ case 'word-known':{const r={...rec(w)},known=!r.known;r.known=known;r.level=known?Math.max(2,r.level):0;r.due=known?Date.now()+3*86400000:0;r.difficult=false;setRec(w,r);unlock();save();updateChrome();drawWords();break;}
+ case 'word-star':setRec(w,{...rec(w),important:!rec(w).important});save();drawWords();break;
+ case 'word-speak':speak(w.word);break;
+ case 'word-delete':confirmAction('단어 삭제',w.word+' 단어를 삭제할까요? 되돌리기로 복구할 수 있어요.',()=>{checkpoint();state.words=state.words.filter(x=>id(x)!==id(w));delete state.records[id(w)];save();render();});break;
+ case 'delete-all':confirmAction('전체 단어 삭제',state.words.length+'개 단어와 단어별 기록을 삭제해요. 삭제 후에도 기본 단어 추가와 JSON 가져오기를 사용할 수 있어요.',()=>{checkpoint();state.words=[];state.records={};session=null;save();render();});break;
+ case 'reset-memory':resetMemory();break;
+ case 'reset-quiz':resetQuiz();break;
+ case 'input-mode':inputMode=b.dataset.mode;importMessage='';renderImport();break;
+ case 'clear-input':draft='';renderImport();break;
+ case 'copy-sample':copy(inputMode==='tsv'?TSV_SAMPLE:inputMode==='reset'?'brave\nforest':JSON.stringify(JSON_SAMPLE,null,2));break;
+ case 'sample-file':download(JSON_SAMPLE,'words-sample.json');break;
+ case 'copy-prompt':copy('초등학교 5학년용 영어 단어 20개를 만들어 줘. 쉬운 한국어 뜻, 품사, 짧은 영어 예문, 한국어 번역, 주제를 포함해 줘. 빈칸 퀴즈를 위해 en 단어를 예문에 같은 철자로 반드시 포함하고, 문장 퀴즈를 위해 2단어 이상의 자연스러운 예문을 만들어 줘. 아래 형식의 유효한 JSON 배열만 출력해 줘.\n'+JSON.stringify(JSON_SAMPLE,null,2));break;
+ case 'file':$('#file-input').click();break;
+ case 'restore':$('#restore-input').click();break;
+ case 'import':doImport();break;
+ case 'builtin':try{showImport(mergeWords(validate(SAMPLE)));}catch(e){showImport(e.message);}break;
+ case 'export':exportWords();break;
+ case 'backup':download({app:'wordforest',version:2,exportedAt:new Date().toISOString(),data:state},'wordforest-backup-'+dk()+'.json');break;
+ case 'undo':if(undoData){state=undoData;undoData=null;session=null;$('#undo-strip').hidden=true;save();render();toast('마지막 변경을 되돌렸어요.');}break;
+ }
+}
+document.querySelector('.nav').innerHTML=[['home','🏠','홈'],['import','＋','추가'],['words','📚','목록'],['cards','🃏','카드'],['quiz','🎯','퀴즈'],['stats','📊','통계']].map(([p,icon,label])=>'<button data-page="'+p+'"><span>'+icon+'</span> '+label+'</button>').join('');
+document.querySelector('.intro').insertAdjacentHTML('afterend','<div id="game-bar" class="game-bar"></div><div id="undo-strip" class="notice" hidden>최근 관리 변경은 이 창을 닫기 전까지 되돌릴 수 있어요. '+btn('undo','되돌리기','chip')+'</div>');
+document.body.insertAdjacentHTML('beforeend','<dialog id="dialog"><div class="row"><h2 id="modal-title"></h2>'+btn('close-modal','✕','chip','aria-label="닫기"')+'</div><div id="modal-body"></div></dialog>');
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;if(b.dataset.page)return go(b.dataset.page);if(b.dataset.action)onAction(b.dataset.action,b);});
+document.addEventListener('change',e=>{if(e.target.dataset.setting){const cfg=e.target.dataset.kind==='cards'?cardSettings:settings;cfg[e.target.dataset.setting]=e.target.value;setupInfo();}});
+$('#date').textContent=new Date().toLocaleDateString('ko-KR',{month:'long',day:'numeric',weekday:'long'});
+render();if(warning)toast(warning);
+
+</script>
+</body></html>
